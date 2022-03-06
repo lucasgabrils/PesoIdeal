@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class PesoIdeal {
+    
+    public static void main(String[] args) {
+    
+        
+        Scanner sc = new Scanner(System.in);
+        
+    
+        
+        System.out.println("Qual seu sexo? digite 1 pra masculino e 2 feminino");
+        
+        int sexo = sc.nextInt();
+        
+        if( sexo == 1)
+        {
+            
+            
+            System.out.println("qual a sua altura?");
+            Double altm = sc.nextDouble();
+           Double pesoidealm = 72.7 * altm - 58;
+
+            System.out.println("Seu peso ideal é " + pesoidealm);
+        } 
+        else if (sexo == 2)
+        {
+            
+            System.out.println("qual a sua altura?");
+            Double altf = sc.nextDouble();
+            Double pesoidealf = 62.1 * altf - 44.7;
+            System.out.println("Seu peso ideal é " + pesoidealf);
+
+
+
+        
+        }
+
+       
+
+    }
+}
